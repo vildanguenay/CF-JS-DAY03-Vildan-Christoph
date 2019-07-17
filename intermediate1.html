@@ -22,7 +22,30 @@
 			return average;
 		}
 
-		average(grades);
+		average(grades)
+
+		document.write("<hr>")
+
+		var test = average(grades);
+		function final(){
+		if (test <=100 && test >=90) {
+			document.write("A");
+		}
+		else if (test <90 && test >=80) {
+			document.write("B");
+		}
+		else if (test <80 && test >=70) {
+			document.write("C");
+		}
+		else if (test <70 && test >=60) {
+			document.write("D");
+		}
+		else if (test <60) {
+			document.write("F");
+		}
+	}
+	final(test);
+
 	</script>
 </body>
 </html>
