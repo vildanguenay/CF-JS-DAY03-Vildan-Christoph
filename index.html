@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	
+	<title>basic 1</title>
 </head>
 <body>
+
+<!--Basic Exercise 1 | Temperature v1.0
+Create a program that according to the temperature will provide you with the information, whether the weather is cold or moderate. This program should generate a different random number every time, that should be between -5c and 25c. If the temperature is between -5c and 10c print "The weather is cold" otherwise print "The weather is moderate". 
+-->
+
+<script>
+		var min = -5;
+		var max = 25;
+		var random = Math.floor(Math.random()* (+max - +min) + +min);
+		document.write(random);
+
+		function temperature(){
+			if (random > 10) {
+				document.write("The weather is moderate");
+				}
+
+			else {
+				document.write("The weather is cold");
+			}
+
+			
+		}
+
+temperature(random)
+
+</script>
 
 </body>
 </html>
